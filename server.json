@@ -5,7 +5,7 @@
       "description": "Desenvolvimento de site",
       "type": "income",
       "category": "Serviço",
-      "price": 14000,
+      "price": 2000,
       "createdAt": "2023-07-06T11:41:00.611Z"
     },
     {
@@ -13,40 +13,48 @@
       "description": "Hamburguer",
       "type": "outcome",
       "category": "Alimentação",
-      "price": 11000,
+      "price": 50,
       "createdAt": "2023-07-06T11:41:00.611Z"
     },
     {
-      "description": "Aplicativo mobile",
-      "price": 4000,
-      "category": "Serviço",
-      "type": "income",
-      "createdAt": "2023-07-06T18:17:16.506Z",
+      "description": "celular",
+      "price": 2000,
+      "category": "Compra",
+      "type": "outcome",
+      "createdAt": "2023-07-06T19:04:27.661Z",
       "id": 3
     },
     {
-      "description": "Aplicativo mobile",
-      "price": 4000,
+      "description": "salário",
+      "price": 2500,
       "category": "Serviço",
       "type": "income",
-      "createdAt": "2023-07-06T18:17:23.662Z",
+      "createdAt": "2023-07-06T19:04:45.534Z",
       "id": 4
     },
     {
-      "description": "Pastel",
-      "price": 10,
+      "description": "Chocolate",
+      "price": 4,
       "category": "Alimentação",
       "type": "outcome",
-      "createdAt": "2023-07-06T18:29:09.953Z",
+      "createdAt": "2023-07-06T19:26:20.377Z",
       "id": 5
     },
     {
-      "description": "Pizza",
-      "price": 60,
+      "description": "Hot dog",
+      "price": 18,
       "category": "Alimentação",
       "type": "outcome",
-      "createdAt": "2023-07-06T18:43:46.151Z",
+      "createdAt": "2023-07-06T19:30:48.744Z",
       "id": 6
+    },
+    {
+      "description": "Desenvolvimento de app",
+      "price": 5000,
+      "category": "Serviço",
+      "type": "income",
+      "createdAt": "2023-07-06T19:45:17.317Z",
+      "id": 7
     }
   ]
 }
