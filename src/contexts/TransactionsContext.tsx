@@ -4,6 +4,7 @@ import { TransactionContextType } from '../interfaces/TransactionsContextType'
 import { TransactionsProviderProps } from '../interfaces/TransactionsProviderProps'
 import { Transaction } from '../interfaces/Transaction'
 import { api } from '../lib/axios'
+import { CreateNewTransactionInput } from '../interfaces/CreateNewTransactionInput'
 
 export const TransactionContext = createContext({} as TransactionContextType)
 
@@ -22,12 +23,28 @@ export function TransactionsProvider({ children }: TransactionsProviderProps) {
     setTransactions(response.data)
   }
 
+  async function createNewTransaction(data: CreateNewTransactionInput) {
+    const { description, price, category, type } = data
+
+    const response = await api.post('transactions', {
+      description,
+      price,
+      category,
+      type,
+      createdAt: new Date(),
+    })
+
+    setTransactions((state) => [response.data, ...state])
+  }
+
   useEffect(() => {
     fetchTransactions()
   }, [])
 
   return (
-    <TransactionContext.Provider value={{ transactions, fetchTransactions }}>
+    <TransactionContext.Provider
+      value={{ transactions, fetchTransactions, createNewTransaction }}
+    >
       {children}
     </TransactionContext.Provider>
   )

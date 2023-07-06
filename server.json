@@ -31,6 +31,22 @@
       "type": "income",
       "createdAt": "2023-07-06T18:17:23.662Z",
       "id": 4
+    },
+    {
+      "description": "Pastel",
+      "price": 10,
+      "category": "Alimentação",
+      "type": "outcome",
+      "createdAt": "2023-07-06T18:29:09.953Z",
+      "id": 5
+    },
+    {
+      "description": "Pizza",
+      "price": 60,
+      "category": "Alimentação",
+      "type": "outcome",
+      "createdAt": "2023-07-06T18:43:46.151Z",
+      "id": 6
     }
   ]
 }
