@@ -1,3 +1,4 @@
 export interface SummaryCardProps {
-  variant?: 'green'
+  variant?: 'green' | 'red'
+  textvariant?: 'green' | 'red'
 }

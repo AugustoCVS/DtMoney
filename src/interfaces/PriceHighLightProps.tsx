@@ -1,3 +1,3 @@
 export interface PriceHighLightProps {
-  variant: 'income' | 'outcome'
+  variant: string
 }

@@ -30,11 +30,29 @@ export const SummaryCard = styled.div<SummaryCardProps>`
     display: block;
     margin-top: 1rem;
     font-size: 2rem;
+
+    ${(props) =>
+      props.textvariant === 'green' &&
+      css`
+        color: ${(props) => props.theme['green-300']};
+      `}
+
+    ${(props) =>
+      props.textvariant === 'red' &&
+      css`
+        color: ${(props) => props.theme['red-300']};
+      `}
   }
 
   ${(props) =>
     props.variant === 'green' &&
     css`
       background: ${(props) => props.theme['green-700']};
+    `}
+
+  ${(props) =>
+    props.variant === 'red' &&
+    css`
+      background: ${(props) => props.theme['red-700']};
     `}
 `
